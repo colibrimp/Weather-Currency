@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="header">
+      <nav class="navbar navbar-dark bg-light">
+        <div class="container-fluid">
+
+        <div class="container">
+
+       <div class="row">
+        <div class="col-6">
+    
+             <p class="brand d-flex justify-content-center" ><img src="https://img.freepik.com/premium-vector/european-union-flag-vector-national-flag-of-eu_125869-2299.jpg"
+              alt=""
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            /><span class="text_carrency">Currency</span>
+            </p>
+            
+     
+    </div>
+
+    <div class="col-6">
+        <p class="brand d-flex justify-content-center">
+            <img src="https://assets.msn.com/weathermapdata/1/static/weather/Icons/taskbar_v3/Condition_Card/D200PartlySunny.svg"
+              alt=""
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            <span class="text_carrency">Weather Today</span>
+        </p>
+    </div>
+    </div>
+
+        </div>
+        </div>
+      </nav>
+    </div>
+
+    <section>
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-6 ">
+
+            <div class="pt-5 pb-5 calculator">
+              <div class="row justify-content-center">
+                <div class="col">
+                  <!-- Content -->
+                  <div class="card p-3">
+                    <h1 class="h2 mb-4">Foreign Exchange Calculator</h1>
+
+                    <form>
+
+                      <div class="courses">
+
+                        <div class="course-item card card-body">
+                          <div class="course-item-title">
+                            <p class="usd">Rate UAH</p> 
+                            <p><img src="https://cdn-icons-png.flaticon.com/128/3373/3373317.png" alt=""></p>
+                          </div>
+                        <div class="course-item-value" data-value="UAH">
+                            UAH
+                          </div>
+                        </div>
+
+
+                        <div class="course-item card card-body">
+                          <div class="course-item-title">
+                            <p class="usd">Rate EUR</p> 
+                            <p class="imgeuro"><img src="https://cdn-icons-png.flaticon.com/128/7473/7473623.png" alt=""></p>
+                          </div>
+                        <div class="course-item-value" data-value="EUR">
+                            EUR
+                          </div>
+                        </div>
+
+                        <div class="course-item card card-body">
+                          <div class="course-item-title">
+                            <p class="usd">Rate USD</p> 
+                            <p><img src="https://pngicon.ru/file/uploads/Flag-SShA-128x67.png" alt=""></p>                        
+                          </div>
+                       <div class="course-item-value
+                       
+                       " data-value="USD">
+                           USD
+                          </div>
+                        </div>
+
+                        <div class="course-item card card-body">
+                          <div class="course-item-title">
+                           <p class="usd">Rate GBP</p> 
+                            <p><img src="https://pngicon.ru/file/uploads/flag-velikobritanii-128x77.png" alt=""></p>
+                          </div>
+                        <div class="course-item-value" data-value="GBP">
+                            GBP
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row mb-1">
+                        <div class="col">
+                          <label for="name">Give:</label>
+                          <select
+                            disabled
+                            class="form-control"
+                            id="exampleFormControlSelect1"
+                          >
+                            <option value="RUB" selected>RUB — Rubles</option>
+                          </select>
+                        </div>
+                        <div class="col">
+                          <label for="name">Receive:</label>
+                          <select
+                            id="selectCarrency"
+                            class="form-control"
+                            id="exampleFormControlSelect1"
+                          >
+                            <option value="UAH">UAH — Hryvnia</option>
+                            <option value="EUR">EUR — Euro</option>
+                            <option value="USD">USD — Dollars</option>
+                            <option value="GBP">GPB — Sterling</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col">
+                          <input
+                            id="inputRub"
+                            type="number"
+                            class="form-control"
+                            id="name"
+                            autofocus
+                          />
+                        </div>
+                        <div class="col">
+                          <input
+                            id="resultConvert"
+                            type="number"
+                            class="form-control"
+                            id="name"
+                          />
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+               
+                </div>
+              
+              </div>
+            </div>
+
+            </div>
+     
+            <!--      weather        -->
+
+          <div class="col-6">
+            <div class="weather">
+                <h4>Weather</h4>
+        
+                    <form id="form" class="input-group">
+                        <input type="text" class="form-control" id="inputCity" placeholder="Enter the name of the Сity">
+                        <button onclick="ShowWeather()" class="btn btn-outline-secondary" type="button">Show Weather</button>
+                    </form>
+
+                   <!-- //card -->
+            </div>
+          </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <div class="footer">
+      <nav class="navbar navbar-dark bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://www.dorogavrim.ru/img/flagi/flag_irlandiya.jpg"
+              alt=""
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            Ireland
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <script src="currency.js"></script>
+    <script src="weather.js"></script>
+  </body>
+</html>
